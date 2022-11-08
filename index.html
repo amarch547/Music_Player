@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ac88c8ce0e.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="player">
+                <div class="playing"><span>Now Playing</span></div>
+                <div class="img-area">
+                    <img src="Images/Banner2.jpg" alt="">
+
+                </div>
+                <b id="title">Song Name</b>
+                <div class="slidecontainer">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="controls">
+                    <button class="previous" id="previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                    <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul class="song-list">
+                    <li data-src="Songs/WarriyoMortal.mp3" data-name="Warriyo Mortal" data-index="0">
+                        <span>Warrio Mortal</span><span>02:24</span>
+                    </li>
+                    <li data-src="Songs/IntoYourArms.mp3" data-name="Into Your Arms" data-index="1">
+                        <span>Into Your Arms</span><span>03:24</span>
+                    </li>
+                    <li data-src="Songs/LoveMeLikeYouDo.mp3" data-name="Love Me Like You Do" data-index="2">
+                        <span>Love Me Like You Do</span><span>03:30</span>
+                    </li>
+                    <li data-src="Songs/Lovely.mp3" data-name="Lovely" data-index="3">
+                        <span>Lovely</span><span>04:24</span>
+                    </li>
+                    <li data-src="Songs/CanWeKissForever.mp3" data-name="Can We Kiss Forever" data-index="4">
+                        <span>Can We Kiss We Forever</span><span>02:24</span>
+                    </li>
+                    <li data-src="Songs/SeeYouAgain.mp3" data-name="See You Again" data-index="5">
+                        <span>See You Again</span><span>05:24</span>
+                    </li>
+                    <li data-src="Songs/Demons.mp3" data-name="Demons" data-index="6">
+                        <span>Demons</span><span>03:24</span>
+                    </li>
+                    <li data-src="Songs/JoTuNaMila.mp3" data-name="Jo Tu Na Mila" data-index="7">
+                        <span>Jo Tu Na Mila</span><span>04:24</span>
+                    </li>
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
